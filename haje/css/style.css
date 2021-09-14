@@ -407,7 +407,8 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto; }
+  /* height: auto; */
+ }
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -10203,3 +10204,10 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+  #orderhover:hover{
+    background-color: #EA3024;
+    color:white;
+    border-radius: 20px ;
+    padding: 5px;  
+  }
