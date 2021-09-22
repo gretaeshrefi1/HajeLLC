@@ -8677,7 +8677,79 @@ input[type="button"].btn-block {
 .ftco-product .owl-carousel .owl-stage-outer {
   padding-bottom: 2em;
   position: relative; }
+/* in between here duhet me u shtu pjesa per products */
 
+  
+.product .popuptext{
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 5%;
+  left: 70%;
+  margin-left: -80px;
+}
+.popup:hover{
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 9px;
+  position: absolute;
+  z-index: 1;
+  bottom: -11%;
+  left: 60%;
+  margin-left: -80px;
+  font-size: 12px;
+}
+
+.product .popuptext::after {
+  content: "";
+  position: relative;
+  bottom: 100%;
+  left: 20%;
+  margin-right: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  transform: rotate(180deg);
+}
+
+.product img{
+  align-content: center;
+  width: 350px;
+  height: 290px;
+  margin-left: 0;
+  padding-right: 0;
+}
+ 
+.product .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 .product {
   display: block;
   width: 100%;
@@ -8736,6 +8808,26 @@ input[type="button"].btn-block {
       -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
       transform: scale(1.1); }
+      .img-products-zoom-on-hover{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+
+      .img-products-zoom-on-hover:hover{
+      -webkit-transform: scale(1.025);
+      -moz-transform: scale(1.025);
+      -ms-transform: scale(1.025);
+      -o-transform: scale(1.025);
+      transform: scale(1.025);
+      }
   .product .img {
     display: block;
     height: 500px; }
@@ -8816,8 +8908,6 @@ input[type="button"].btn-block {
     -webkit-box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
     -moz-box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
     box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07); }
-    .product:hover .pricing {
-      opacity: 0; }
     .product:hover .text .bottom-area {
       opacity: 1; }
 
@@ -9201,7 +9291,7 @@ textarea.form-control {
   visibility: hidden; }
 
 .bg-primary {
-  background:#EA3024;!important; }
+  background:#EA3024 !important; }
 
 .bg-black {
   background: #000000 !important; }
