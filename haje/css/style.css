@@ -3720,7 +3720,7 @@ input[type="button"].btn-block {
     padding-left: 0; }
   .navbar-expand .navbar-nav {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
+    -webkit-box-direction: normal;  
     -ms-flex-direction: row;
     flex-direction: row; }
     .navbar-expand .navbar-nav .dropdown-menu {
